@@ -1,0 +1,121 @@
+/* Default styles for larger screens */
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartItems {
+  width: 700px;
+  max-width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin: 30px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.cartItems img {
+  max-width: 100%;
+  height: 60%;
+}
+
+.cartItems .description {
+  flex: 1;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.countHandling button {
+  width: 40px;
+  height: 40px;
+  background-color: #00b300;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 24px;
+}
+
+.countHandling button:hover {
+  background-color: #0056b3;
+}
+
+.countHandling input {
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin: 0 10px;
+  padding: 5px;
+  font-size: 20px;
+  outline: none;
+}
+
+.checkout button {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout button:hover {
+  background-color: #00b300;
+}
+
+/* Responsive adjustments for smaller screens (tablets and mobile) */
+@media (max-width: 768px) {
+  .cart {
+    align-items: flex-start;
+  }
+
+  .cartItems {
+    width: 100%;
+    height: 320px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0; /* Remove border radius for smaller screens */
+    padding: 8px;
+    margin: 15px 0;
+  }
+
+  .cartItems img {
+    height: 45%; /* Maintain the image's aspect ratio */
+  }
+
+  .cartItems .description {
+    font-size: 18px;
+  }
+
+  .countHandling {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .countHandling button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  .countHandling input {
+    width: 40px;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .checkout button {
+    width: 100%;
+  }
+}

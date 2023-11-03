@@ -1,0 +1,67 @@
+/* Center the title and style it */
+.shotTitle {
+  text-align: center;
+  margin-top: 20px; /* Reduce the top margin */
+  font-size: 40px;
+}
+
+/* Container for product display */
+.display-Products {
+  width: 100%;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center horizontally */
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsive grid columns */
+  gap: 20px; /* Add some gap between products */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* Style individual product items */
+.display-Products .product {
+  text-align: center;
+  background-color: #fff; /* Add a background color */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.display-Products img {
+  max-width: 100%; /* Ensure images fit within their containers */
+  height: 60%;
+}
+
+/* Style product descriptions */
+.display-Products .pro-description {
+  margin: 10px 0;
+}
+
+/* Add a hover effect to the product items */
+.display-Products .product:hover {
+  transform: scale(1.05); /* Slightly increase the size on hover */
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Style the "Add to Cart" button */
+.addToCartBttn {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding: 10px 15px; /* Adjust padding for better appearance */
+  border-radius: 15px;
+  text-align: center; /* Center text within the button */
+  font-weight: bold; /* Make the text bold */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.addToCartBttn:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+}
